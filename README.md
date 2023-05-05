@@ -1,7 +1,7 @@
 # Image-Classifier-CIFAR-10
 CIFAR-10 is an established computer-vision dataset used for object recognition. It is a subset of the 80 million tiny images dataset and consists of 60,000 32x32 color images containing one of 10 object classes, with 6000 images per class. Using this we develop a model that can classify images
 
-#### Overview
+#### Overview basic backprop neural network
 Artificial Neural Networks are computational learning systems that uses a network of functions to understand and translate a data input of one form into a desired output, usually in another form. The concept of the artificial neural network was inspired by human biology and the way neurons of the human brain function together to understand inputs from human senses.
 
 A simple neural network consists of Input Layer, Hidden Layer and Output Layer.
@@ -33,13 +33,33 @@ There are five major steps to the implementation:
 
 ![image.png](results/back_prop.png)
 
+# Training an Image Classifier
+
+##Overview
+CIFAR10 dataset will be used to train an image classifier.
+
+![](https://miro.medium.com/max/578/1*BCsHErqOJxmKDLQXYJR_ow.png)
+
+###Define a Convolutional Neural Network 
+
+Creating a neural network that take 3-channel images. Network archtecture Conv2d --> ReLU --> MaxPool2d --> Conv2d --> ReLU --> MaxPool2d --> Flatten --> Linear --> ReLU --> Linear --> ReLU --> Linear
 
 # Results 
+
+![image.png](results/Accuracy_v_Epochs.png)
+![image.png](results/loss_v_epoch.png)
+![image.png](results/confusion_matrix.png)
+
  
 # File Structure
 ```
 📦Image-Classifier-CIFAR-10
-┣ 📜Image_classifier_CIFAR_10.ipynb
-┣ 📜LICENSE
-┗ 📜README.md
+ ┣ 📂results
+ ┃ ┣ 📜Accuracy_v_Epochs.png
+ ┃ ┣ 📜back_prop.png
+ ┃ ┣ 📜confusion_matrix.png
+ ┃ ┗ 📜loss_v_epoch.png
+ ┣ 📜Image_classifier_CIFAR_10.ipynb
+ ┣ 📜LICENSE
+ ┗ 📜README.md
 ```
