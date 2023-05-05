@@ -3,6 +3,6 @@ CIFAR-10 is an established computer-vision dataset used for object recognition. 
 
 # File Structure
 📦Image-Classifier-CIFAR-10
- ┣ 📜Image_classifier_CIFAR_10.ipynb
- ┣ 📜LICENSE
- ┗ 📜README.md
+┣ 📜Image_classifier_CIFAR_10.ipynb
+┣ 📜LICENSE
+┗ 📜README.md
