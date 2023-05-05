@@ -42,8 +42,11 @@ CIFAR10 dataset will be used to train an image classifier.
 
 ###Define a Convolutional Neural Network 
 
-Creating a neural network that take 3-channel images. Network archtecture Conv2d --> ReLU --> MaxPool2d --> Conv2d --> ReLU --> MaxPool2d --> Flatten --> Linear --> ReLU --> Linear --> ReLU --> Linear
-
+Creating a neural network that take 3-channel images. 
+##Network archtecture:
+```
+Conv2d --> ReLU --> MaxPool2d --> Conv2d --> ReLU --> MaxPool2d --> Flatten --> Linear --> ReLU --> Linear --> ReLU --> Linear
+```
 # Results 
 
 ![image.png](results/Accuracy_v_Epochs.png)
